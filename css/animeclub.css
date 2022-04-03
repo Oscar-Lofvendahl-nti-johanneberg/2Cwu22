@@ -31,7 +31,7 @@
   }
 
   #logo {
-      color: orangered;
+      color: rgb(255, 140, 69);
       display: flex;
       align-items: center;
       cursor: pointer;
@@ -88,7 +88,8 @@
 
   .button:hover {
       color: black;
-      transition: all 0.3s ease;
+      transform: scale(1.05);
+      transition: 0.1s ease-in;
   }
 
   .navbar_links:hover {
@@ -193,7 +194,7 @@
 
 /*Hero section*/
 .hero {
-    background-image: url(/img/anime-content.jpg);
+    background-image: url(/img/anime-content2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -253,7 +254,7 @@
 /* About- och join us Section */
 .main {
     background-color: rgb(27, 27, 27);
-    padding-top: 5rem;
+    padding-top: 7.5rem;
     padding-bottom: 10rem;
 }
 
@@ -330,8 +331,14 @@
     justify-content: center;
 }
 
-.main_img-card img {vertical-align: middle;}
-.main_img-card2 img {vertical-align: middle;}
+.main_img-card img {
+    vertical-align: middle;
+    box-shadow: 0px 0px 10px 5px black;
+}
+.main_img-card2 img {
+    vertical-align: middle;
+    box-shadow: 0px 0px 10px 5px black;
+}
 
 .main_img-card2 {
     margin: 10px;
@@ -446,6 +453,7 @@
     flex-direction: column;
     justify-content: center;
     transition: 0.3s ease-in;
+    box-shadow: 0px 0px 10px 5px black;
 }
 
 .anime_card:hover {
@@ -461,6 +469,7 @@
     flex-direction: column;
     justify-content: center;
     transition: 0.3s ease-in;
+    box-shadow: 0px 0px 10px 5px black;
 }
 
 .anime_card2:hover {
@@ -559,7 +568,7 @@
 }
 
 #footer_logo span {
-    color: red;
+    color: rgb(255, 140, 69);
 }
 
 .footer_links {

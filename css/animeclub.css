@@ -193,8 +193,14 @@
 
 /*Hero section*/
 .hero {
-    background: black;
-    padding: 250px 0;
+    background-image: url(/img/anime-content.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    padding-bottom: 300px;
 }
 
 .hero_container {
@@ -218,19 +224,20 @@
 .hero_heading span {
     color: orangered;
 }
+
+.hero_description {
+    font-size: 40px;
+    color: white;
+}
   
 @media screen and (max-width: 768px) {
     .hero {
-        padding: 125px 0;
+        padding-top: 150px;
+        padding-bottom: 200px;
     }
     .hero_heading {
         font-size: 60px;
     }
-    
-    .hero_description {
-        font-size: 40px;
-        color: white;
-    }    
 }
 
 @media screen and (max-width: 400px) {
@@ -239,14 +246,15 @@
     }
 
     .hero_description {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
-/* About Section */
+/* About- och join us Section */
 .main {
     background-color: rgb(27, 27, 27);
-    padding: 10rem 0;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
 }
 
 .main_container {
@@ -288,8 +296,12 @@
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
-    transition: all 0.35s;
     outline: none;
+}
+
+.main_btn:hover {
+    transform: scale(1.05);
+    transition: 0.1s ease-in;
 }
 
 .main_btn a {
@@ -368,7 +380,8 @@
 
 @media screen and (max-width: 600px) {
     .main {
-        padding: 5rem 0;
+        padding-top: 5rem;
+        padding-bottom: 10rem;
     }
 
     .main_img_container {
@@ -388,7 +401,7 @@
     
     .main_content h1 {
         font-size: 2rem;
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 
     .main_content h2 {
@@ -409,7 +422,8 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 10rem 0;
+    padding-top: 5rem;
+    padding-bottom: 7.5rem;
 }
 
 .anime h1 {
@@ -427,11 +441,16 @@
 .anime_card {
     position: relative;
     margin: 20px;
-    max-width: 300px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: 0.3s ease-in;
+}
+
+.anime_card:hover {
+    transform: scale(1.05);
+    transition: 0.1s ease-in;
 }
 
 .anime_card2 {
@@ -444,8 +463,20 @@
     transition: 0.3s ease-in;
 }
 
-.anime_card img {vertical-align: middle;}
-.anime_card2 img {vertical-align: middle;}
+.anime_card2:hover {
+    transform: scale(1.05);
+    transition: 0.1s ease-in;
+}
+
+.anime_card img {
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.anime_card2 img {
+    vertical-align: middle;
+    border-radius: 4px;
+}
 
 .content h1 {
     color: white;
@@ -463,6 +494,7 @@
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+    border-radius: 4px;
 }
 
 .anime_card2 .content {
@@ -473,30 +505,31 @@
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+    border-radius: 4px;
 }
 
 @media screen and (max-width: 1300px) {
     .anime_wrapper {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }
 
 @media screen and (max-width: 768px) {
     .anime_wrapper {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
-    .anime_card img {
-        height: 250px;
-        width: 150px;
+    .anime_card {
+        width: 250px;
+    }
+
+    .anime_card2 {
+        display: none;
     }
 
     .content h1 {
         font-size: 1.5rem;
-    }
-
-    .anime_card2 {
-        display: none; 
     }
 }
 

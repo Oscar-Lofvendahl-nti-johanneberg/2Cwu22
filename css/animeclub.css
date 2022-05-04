@@ -192,8 +192,8 @@
     }
   }
 
-/*Hero section*/
-.hero {
+/*Home section*/
+.home {
     background-image: url(/img/anime-content2.jpg);
     background-position: center;
     background-size: cover;
@@ -204,7 +204,7 @@
     padding-bottom: 300px;
 }
 
-.hero_container {
+.home_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,37 +216,37 @@
     padding: 30px;
 }
 
-.hero_heading {
+.home_heading {
     font-size: 100px;
     margin-bottom: 24px;
     color: white;
 }
 
-.hero_heading span {
+.home_heading span {
     color: orangered;
 }
 
-.hero_description {
+.home_description {
     font-size: 40px;
     color: white;
 }
   
 @media screen and (max-width: 768px) {
-    .hero {
+    .home {
         padding-top: 150px;
         padding-bottom: 200px;
     }
-    .hero_heading {
+    .home_heading {
         font-size: 60px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .hero_heading {
+    .home_heading {
         font-size: 50px;
     }
 
-    .hero_description {
+    .home_description {
         font-size: 20px;
     }
 }
@@ -254,6 +254,14 @@
 /* About- och join us Section */
 .main {
     background-color: rgb(27, 27, 27);
+    padding-top: 7.5rem;
+    padding-bottom: 10rem;
+}
+
+.main2 {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    justify-content: space-around;
     padding-top: 7.5rem;
     padding-bottom: 10rem;
 }
@@ -274,6 +282,9 @@
 .main_content {
     color:white;
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .main_content h1 {

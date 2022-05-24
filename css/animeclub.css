@@ -74,13 +74,7 @@
   button {
       cursor: pointer;
       color: white;
-      opacity: 0.9;
       text-decoration: none;
-  }
-  
-  button:hover{
-      opacity: 1;
-      color: black;
   }
 
   .button {
@@ -473,6 +467,14 @@ input {
     width: 50%;
     font-size: 1.25rem;
     border-radius: 20px;
+}
+
+.cancelbtn a, .submitbtn a {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
 }
 
 .clearfix::after {
